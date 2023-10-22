@@ -1,15 +1,11 @@
 package golang_dependencies
 
-import "fmt"
+import dp "github.com/mishamolnar/golang-dependency-two"
 
 const (
 	G float32 = 9.8
 )
 
 func Level() string {
-	return "String from direct dependency"
-}
-
-func Direct() {
-	fmt.Println("Hello from direct dependency func")
+	return dp.CapitalizeString("String from direct dependency", "another")
 }
